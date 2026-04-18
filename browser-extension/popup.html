@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bookie Sync</title>
+    <style>
+        :root {
+            --bg: #09090b;
+            --card: #0f0f11;
+            --border: #27272a;
+            --text-main: #fafafa;
+            --text-muted: #a1a1aa;
+            --accent: #1a1a2e;
+            --accent-border: rgba(99, 102, 241, 0.2);
+            --accent-text: #e0e7ff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 320px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .logo {
+            width: 28px;
+            height: 28px;
+            background: #fff;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        h1 {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .active {
+            background: rgba(16, 185, 129, 0.05);
+            color: rgba(16, 185, 129, 0.8);
+        }
+
+        .inactive {
+            background: rgba(244, 63, 94, 0.05);
+            color: rgba(244, 63, 94, 0.8);
+        }
+
+        .dot {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 1.5;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            border-color: var(--accent-border);
+            color: var(--accent-text);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+        }
+
+        .btn-primary:hover {
+            background-color: #252545;
+            transform: translateY(-1px);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+
+        .btn-outline:hover {
+            border-color: #555;
+            color: #fff;
+        }
+
+        #setup-section,
+        #status-section {
+            display: none;
+        }
+
+        .footer {
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-text {
+            font-size: 10px;
+            color: #52525b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3">
+                <polyline points="20 12 20 22 12 17 4 22 4 2"></polyline>
+            </svg>
+        </div>
+        <h1>Bookie Sync</h1>
+    </div>
+
+    <!-- Unconnected State -->
+    <div id="setup-section">
+        <div class="card">
+            <div class="status-badge inactive">
+                <div class="dot"></div> Not Connected
+            </div>
+            <p>Connect your browser to automatically sync bookmarks and grab page content for your digest.</p>
+            <button id="connectBtn" class="btn btn-primary">Connect to Bookie</button>
+        </div>
+    </div>
+
+    <!-- Connected State -->
+    <div id="status-section">
+        <div class="card">
+            <div class="status-badge active">
+                <div class="dot"></div> Fully Connected
+            </div>
+            <p id="displayUrl"
+                style="word-break: break-all; font-family: monospace; font-size: 11px; margin-bottom: 12px; color: #71717a;">
+            </p>
+            <p>Automatic sync is active. Every bookmark you create will be securely sent to your Telegram digest.</p>
+            <button id="reconnectBtn" class="btn btn-primary">Update Settings</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span class="footer-text">v1.0.0</span>
+        <span class="footer-text">Powered by AI</span>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

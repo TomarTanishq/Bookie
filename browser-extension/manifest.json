@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Digest Auto-Sync",
+  "version": "1.0.0",
+  "description": "Automatically syncs your browser bookmarks to Bookmark Digest.",
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "notifications",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://localhost/*",
+    "https://*.vercel.app/*",
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://localhost/*", "https://*.vercel.app/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Configure Bookmark Digest"
+  }
+}
