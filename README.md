@@ -7,11 +7,11 @@
 
 ## Key Features
 
-*   ** Sunday Morning Digest**: Every Sunday at 9:00 AM, Bookie uses LLMs (Groq/Gemini) to compress your week's bookmarks into vitals signals—dropping a beautiful, 2-sentence summary of each directly into your Telegram.
-*   ** Seamless Extension Handshake**: A custom-built browser extension onboarding flow. No manual API keys—just a secure, one-click content-script handshake between the web app and your browser.
-*   ** AI Chat Interface**: Talk to your knowledge base. Ask "What was that article about React 19?" and get an instant summary derived from your saved DOM content.
-*   ** Multi-Channel Ingestion**: Save from your desktop via the extension, or forward links directly to the Bookie Telegram Bot from your mobile share sheet.
-*   ** Premium Aesthetic**: A sophisticated, desaturated "Midnight Indigo" dark theme designed for focus and visual excellence.
+*   **Sunday Morning Digest**: Every Sunday at 9:00 AM, Bookie uses LLMs (Groq) to compress your week's bookmarks into vitals signals—dropping a 2-sentence summary of each directly into your Telegram.
+*   **Seamless Extension Handshake**: A custom-built browser extension onboarding flow. No manual API keys—just a secure, one-click content-script handshake between the web app and your browser.
+*   **AI Chat Interface**: Talk to your knowledge base. Ask "What was that article about React 19?" and get an instant summary derived from your saved DOM content.
+*   **Multi-Channel Ingestion**: Save from your desktop via the extension, or forward links directly to the Bookie Telegram Bot from your mobile share sheet.
+*   **Premium Aesthetic**: A sophisticated, desaturated "Midnight Indigo" dark theme designed for focus and visual excellence.
 
 ## 🛠 Tech Stack
 
