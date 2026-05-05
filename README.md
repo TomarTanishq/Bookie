@@ -2,8 +2,8 @@
 
 **Bookie** is a high-performance, minimalist bookmark management system designed to solve the "link graveyard" problem. Instead of saving articles you'll never read, Bookie actively forces consumption by delivering a radically compressed **Sunday Morning Digest** directly to your **Telegram**.
 
-![Hero Image](https://raw.githubusercontent.com/TomarTanishq/Bookie/main/public/hero-preview.png)
-*(Note: Replace with your actual screenshot after deployment)*
+<img width="1863" height="768" alt="image" src="https://github.com/user-attachments/assets/6b01b174-242b-42ba-88f8-bd80df4d46a1" />
+
 
 ## ✨ Key Features
 
