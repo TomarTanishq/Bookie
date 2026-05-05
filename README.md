@@ -13,7 +13,7 @@
 *   **Multi-Channel Ingestion**: Save from your desktop via the extension, or forward links directly to the Bookie Telegram Bot from your mobile share sheet.
 *   **Premium Aesthetic**: A sophisticated, desaturated "Midnight Indigo" dark theme designed for focus and visual excellence.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 *   **Framework**: [Next.js 15](https://nextjs.org/) (App Router, Middleware)
 *   **Database & Auth**: [Supabase](https://supabase.com/)
@@ -64,7 +64,7 @@ Run the following in your Supabase SQL Editor:
 *   `bookmarks`: `id (uuid), user_id (uuid), url (text), title (text), summary (text), content (text), digest_sent (bool)`
 *   `telegram_link_tokens`: `token (uuid), user_id (uuid), expires_at (timestamp)`
 
-## 🔌 Browser Extension
+## Browser Extension
 The extension code is located in `/browser-extension`. 
 1. Open `chrome://extensions/`.
 2. Enable **Developer Mode**.
