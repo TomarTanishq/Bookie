@@ -5,13 +5,13 @@
 <img width="1863" height="768" alt="image" src="https://github.com/user-attachments/assets/6b01b174-242b-42ba-88f8-bd80df4d46a1" />
 
 
-## ✨ Key Features
+## Key Features
 
-*   **⚡ Sunday Morning Digest**: Every Sunday at 9:00 AM, Bookie uses LLMs (Groq/Gemini) to compress your week's bookmarks into vitals signals—dropping a beautiful, 2-sentence summary of each directly into your Telegram.
-*   **🔌 Seamless Extension Handshake**: A custom-built browser extension onboarding flow. No manual API keys—just a secure, one-click content-script handshake between the web app and your browser.
-*   **🤖 AI Chat Interface**: Talk to your knowledge base. Ask "What was that article about React 19?" and get an instant summary derived from your saved DOM content.
-*   **📱 Multi-Channel Ingestion**: Save from your desktop via the extension, or forward links directly to the Bookie Telegram Bot from your mobile share sheet.
-*   **🌑 Premium Aesthetic**: A sophisticated, desaturated "Midnight Indigo" dark theme designed for focus and visual excellence.
+*   ** Sunday Morning Digest**: Every Sunday at 9:00 AM, Bookie uses LLMs (Groq/Gemini) to compress your week's bookmarks into vitals signals—dropping a beautiful, 2-sentence summary of each directly into your Telegram.
+*   ** Seamless Extension Handshake**: A custom-built browser extension onboarding flow. No manual API keys—just a secure, one-click content-script handshake between the web app and your browser.
+*   ** AI Chat Interface**: Talk to your knowledge base. Ask "What was that article about React 19?" and get an instant summary derived from your saved DOM content.
+*   ** Multi-Channel Ingestion**: Save from your desktop via the extension, or forward links directly to the Bookie Telegram Bot from your mobile share sheet.
+*   ** Premium Aesthetic**: A sophisticated, desaturated "Midnight Indigo" dark theme designed for focus and visual excellence.
 
 ## 🛠 Tech Stack
 
@@ -21,7 +21,7 @@
 *   **Styling**: Vanilla CSS + Tailwind-inspired utility classes for a customized, desaturated look.
 *   **Integration**: Telegram Bot API ([node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api))
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Prerequisites
 *   A [Supabase](https://supabase.com/) project.
@@ -70,6 +70,3 @@ The extension code is located in `/browser-extension`.
 2. Enable **Developer Mode**.
 3. Click **Load unpacked** and select the `/browser-extension` folder.
 4. Visit your deployed app's `/setup-extension` page to link it instantly.
-
-## 📄 License
-MIT © [Tomar Tanishq](https://github.com/TomarTanishq)
